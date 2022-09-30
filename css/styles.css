@@ -4,6 +4,7 @@
         --accent-color: #2196F3;
         --text-color: #757575;
         --white-text: #FFFFFF;
+        --unhover-element:#AFB1B8;
 }
 
 p,
@@ -152,10 +153,16 @@ body {
         color: var(--accent-color);
 }
 
+
 .contact-link:focus {
         color: var(--accent-color);
 }
 
+.contact-ico-mail,
+.contact-ico-phone {
+        fill: currentColor;
+        align-items: baseline;
+}
 /* HERO */
 .section {
         padding: 94px 0;
@@ -163,7 +170,19 @@ body {
 
 .hero {
         background: #2F303A;
+        background-image:
+        linear-gradient(
+                rgba(25, 28, 38, 0.4),
+                rgba(25, 28, 38, 0.4)
+        ),
+        url(../images/hero-bg.jpg);
+        max-width: 1600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-grow: 1;
         padding: 200px 0;
+        margin: 0 auto;
 }
 
 .hero-text {
@@ -213,6 +232,20 @@ body {
         margin: -1px;
 }
 
+.feature-image {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+}
+
+.feature-image-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         width: 270px;
+         height: 120px;
+         background-color:#F5F4FA;
+}
 .feature-content {
         display: flex;
         gap: 30px;
@@ -224,8 +257,10 @@ body {
 
 .feature {}
 
+
 .feature-item {
         width: 270px;
+        
 }
 
 
@@ -311,6 +346,72 @@ body {
         color: var(--text-color)
 }
 
+.team-soc {
+        display: flex;
+        gap: 10px;
+        margin-left: 32px;
+        margin-top: 16px;
+}
+
+.team-soc-item {
+       
+}
+
+.team-soc-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        
+        color: var(--unhover-element);
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+background-color: var(--accent-color);
+color: #FFFFFF;  
+}
+
+.team-soc-icon {
+        fill: currentColor;
+}
+
+.customers-logo-list {
+        display: flex;
+        gap: 30px;
+}
+
+.customers-logo-item {   
+}
+
+.customer-logo-link {
+        width: 170px;
+        height: 92px;
+        background-color: var(--white-text);
+        color: var(--unhover-element);
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.customer-logo-link:hover,
+.customer-logo-link:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+}
+
+.customer-icon {
+        width: 106px;
+        fill: currentColor;
+}
+
 .footer {
         background-color: #2F303A;
         padding: 60px 0;
@@ -375,6 +476,68 @@ body {
 
 .footer-adress:focus {
         color: var(--accent-color)
+}
+
+.footer-title {
+        font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+        
+                color: var(--white-text);
+                margin-bottom: 20px;
+                padding-left: 1px;
+}
+
+.footer-box {
+        display: flex;
+        gap: 70px;
+}
+
+.footer-nav-box {
+}
+
+.footer-socials-box {
+margin-top: 12px;
+}
+
+.footer-socials {
+}
+
+.footer-soc {
+        display: flex;
+        gap: 10px;
+        margin-left: 32px;
+        margin-top: 16px;
+        margin: 0;
+        
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        color: var(--white-text);
+        background: rgba(255, 255, 255, 0.1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+        background-color: var(--accent-color);
+        color: var(--white-text);
+}
+
+.footer-soc-icon {
+        fill: currentColor;
 }
 
 .worksbuttons-button.active {
@@ -444,6 +607,7 @@ body {
         width: calc((100% - 2 * 30px) / 3);
         background: var(--white-text);
         border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-img {}
