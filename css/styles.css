@@ -130,7 +130,8 @@ body {
 }
 
 
-.header-comtact {}
+.header-comtact {
+}
 
 .contact-container {
         display: flex;
@@ -142,11 +143,15 @@ body {
 }
 
 .contact-link {
+        display: flex;
+        align-items: center;
+        
         font-style: normal;
         font-weight: 500;
         line-height: 1.15;
         letter-spacing: 0.02em;
         color: var(--text-color);
+        
 }
 
 .contact-link:hover {
@@ -161,7 +166,8 @@ body {
 .contact-ico-mail,
 .contact-ico-phone {
         fill: currentColor;
-        align-items: baseline;
+        
+        margin-right: 10px;
 }
 /* HERO */
 .section {
@@ -232,6 +238,10 @@ body {
         margin: -1px;
 }
 
+.feature-icon {
+        
+}
+
 .feature-image {
         display: flex;
         gap: 30px;
@@ -249,6 +259,7 @@ body {
 .feature-content {
         display: flex;
         gap: 30px;
+        flex-wrap: wrap;
 }
 
 .feature-content h3 {
@@ -348,8 +359,9 @@ body {
 
 .team-soc {
         display: flex;
+        justify-content: center;
+
         gap: 10px;
-        margin-left: 32px;
         margin-top: 16px;
 }
 
@@ -418,7 +430,6 @@ color: #FFFFFF;
 
 }
 
-.footer .container {}
 
 .footer-logo {
         display: block;
@@ -493,13 +504,14 @@ color: #FFFFFF;
 .footer-box {
         display: flex;
         gap: 70px;
+        align-items: baseline;
 }
 
 .footer-nav-box {
 }
 
 .footer-socials-box {
-margin-top: 12px;
+
 }
 
 .footer-socials {
@@ -607,6 +619,9 @@ margin-top: 12px;
         width: calc((100% - 2 * 30px) / 3);
         background: var(--white-text);
         border: 1px solid #EEEEEE;
+}
+
+.work-item:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
